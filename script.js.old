@@ -1,0 +1,100 @@
+
+
+var storeData = [];
+// $(document).ready(function () {
+initialLocalStoragePlace();
+//empty array for local storage
+console.log(storeData);
+// $('.save-button').click(function () {
+// e.preventDefault();
+// user clicks save button
+
+// var placeCalItems = JSON.parse(localStorage.getItem("item")); 
+$(".save-button").on("click", function (event, state) {
+
+    var inputText = $(".input-text-" + this.id).val();
+    var thisIstheId = this.id;
+    console.log(inputText + " this is input text");
+    console.log(thisIstheId + " this is input text");
+
+
+    checkifSavedInArray(inputText, thisIstheId);
+
+});
+// });
+
+
+function checkifSavedInArray(inputText, thisIstheId) {
+
+
+    console.log(thisIstheId + " this item ID");
+    console.log(inputText + " this is input text");
+    // push into array
+
+    // var data = JSON.parse(localStorage.getItem("data"));
+    // console.log(data + " parsed data from local");
+    // localStorage.removeItem(key);
+    console.log(storeData + " this is storeData");
+
+    // var indexOf = storeData.indexOf(thisIstheId);
+
+
+    // console.log(indexOf);
+    // storeData = $.grep(storeData, function (a) {
+    //     console.log(a.id + " tis is the a id");
+    //     console.log(a.textValue + " this")
+    //     if (a.Id == thisIstheId) {
+    //         a.textValue = inputText;
+    //     }
+    //     return a;
+    // });
+    console.log(storeData + " this is arrya logged");
+
+    // storeData.splice(storeData.indexOf(inputText), 1, inputText)
+    storeData.push({ textValue: inputText, id: thisIstheId });
+    var storeDataLocalStorage = JSON.stringify(storeData);
+
+
+
+
+    // array = $.grep(storeData, function (a) {
+    //     if (a.Id == id) {
+    //         a.Value = newValue;
+    //     }
+    //     return a;
+    // });
+
+    // var locText = data[0].textValue;
+    // var locId = data[0].id;
+
+    // console.log(locText);
+    // console.log(locId);
+
+
+    localStorage.setItem("data", storeDataLocalStorage);
+
+}
+
+function initialLocalStoragePlace() {
+    // console.log($(".container").html());
+    // var dataArray = [];
+    var data = JSON.parse(localStorage.getItem("data"));
+    console.log(data);
+    if (data != null) {
+        for (var i = 0; i < data.length; i++) {
+            var textValueVar = data[i].textValue
+            var dataIdVar = data[i].id
+
+
+            let input = $(".input-text-" + dataIdVar);
+            input.val(input.val() + textValueVar);
+
+            storeData.push({ textValue: data[i].textValue, id: data[i].id });
+
+
+        }
+
+    }
+
+    // return dataArray;
+}
