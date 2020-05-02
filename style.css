@@ -1,77 +1,87 @@
-body {
+/* body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
-  }
-  
-  textarea{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid black;
-    padding: 10px;
-  }
-  
-  .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-  }
-  
-  .description{
-    white-space: pre-wrap;
-  }
-  
-  .time-block{
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  .past {
-    background-color: #d3d3d3;
-    color: white;
-    border-color: rgb(117, 117, 117);
-  }
-  
-  .present {
-    background-color: #ff6961;
-    color: white;
-  }
-  
-  .future {
-    background-color: #77dd77;
-    color: white;
-  }
-  
-  .saveBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
-  }
-  
-  .saveBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }
-  .time {
-  
+  } */
+@font-face {
+  font-family: "edge-font";
+  src: url(./assets/roboclonechrome.ttf);
+}
+.body {
+  color: white;
+  font-family: edge-font;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  /* border-bottom: 10px solid red; */
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #3a2e2e;
+  color: white;
+  border-color: silver;
+  font-size: 20px;
+}
+
+.present {
+  background-color: #863d39;
+  color: white;
+}
+
+.future {
+  background-color: #1a40bb;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+.time {
   text-align: center;
   padding-top: 22px;
   padding-left: 10px;
@@ -79,16 +89,58 @@ body {
   border-right: solid 1px black;
   border-top: solid 1px black;
   border-bottom: solid 1px black;
-  }
-  
-  .time2 {
-  
-    text-align: center;
-    padding-top: 22px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-right: solid 1px black;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-    }
-    
+}
+
+.time2 {
+  text-align: center;
+  padding-top: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: solid 1px black;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.bg {
+  background-image: url("./assets/wallpaperflare.com_wallpaper.jpg");
+  background-size: cover !important;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+.responsive2 {
+  width: 100%;
+  height: auto;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+.container-css {
+  background-color: black;
+  border: solid red 5px;
+  padding-bottom: 50px;
+}
+.momentum-time {
+  color: red;
+  font-size: 60px;
+}
+
+.align-center {
+  text-align: center;
+}
+.save-button {
+  color: red;
+  border: red solid 2px;
+  font-size: 20px;
+}
+.input-group-text1 {
+  padding: 20px;
+  border: red 2px solid;
+  font-size: 20px;
+  color:silver;
+}
