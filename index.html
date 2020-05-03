@@ -11,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <title>Work Day Scheduler</title>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -21,133 +20,126 @@
     <div class="container">
       <header class="jumbotron">
         <img class="responsive" src="./assets/Edge_of_Tomorrow_Logo.png" alt="JP" />
-
-        <h2 class="momentum-time" id="currentDay"></h2>
+        <h1 class="momentum-time" id="currentDay"></h1>
         <p id="currentDay" class="lead"></p>
       </header>
       <div class="container container-css">
-        <h1 class="align-center">LIVE. DIE. REPEAT</h1>
-        <h3 class="align-center">Different Day, same SHIT</h3>
-        <div class="input-group" id>
-          <div class="input-group-prepend">
-            <span class="input-group-text1">8:00 am</span>
+        <h2 class="align-center">LIVE. DIE. REPEAT</h2>
+        <h3 class="align-center">Different Day, same SHIT</h>
+          <div class="input-group" id>
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 19px;">8:00 am</span>
+            </div>
+            <textarea class="form-control input-text-8" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="8">
+                Save
+              </button>
+            </div>
           </div>
-          <textarea class="form-control input-text-8" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="8">
-              Save
-            </button>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 19px;">9:00 am</span>
+            </div>
+            <textarea class="form-control input-text-9" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="9">
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1">9:00 am</span>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 16px;">10:00 am </span>
+            </div>
+            <textarea class="form-control input-text-10" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="10">
+                Save
+              </button>
+            </div>
           </div>
-          <textarea class="form-control input-text-9" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="9">
-              Save
-            </button>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 18px;">11:00 am</span>
+            </div>
+            <textarea class=" form-control input-text-11" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="11">
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 16px;">10:00 am </span>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 17px;">12:00 pm</span>
+            </div>
+            <textarea class="form-control input-text-12" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="12">
+                Save
+              </button>
+            </div>
           </div>
-          <textarea class="form-control input-text-10" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="10">
-              Save
-            </button>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 22px;"> 1:00 pm </span>
+            </div>
+            <textarea class="form-control input-text-13" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="13">
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 19px;">11:00 am</span>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 20px;">2:00 pm</span>
+            </div>
+            <textarea class="form-control input-text-14" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="14">
+                Save
+              </button>
+            </div>
           </div>
-          <textarea class=" form-control input-text-11" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="11">
-              Save
-            </button>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 21px;">3:00 pm</span>
+            </div>
+            <textarea class="form-control input-text-15" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="15">
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 17px;">12:00 pm</span>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 20.5px;">4:00 pm</span>
+            </div>
+            <textarea class="form-control input-text-16" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="16">
+                Save
+              </button>
+            </div>
           </div>
-          <textarea class="form-control input-text-12" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="12">
-              Save
-            </button>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text1" style="padding: 20.5px;">5:00 pm</span>
+            </div>
+            <textarea class="form-control input-text-17" aria-label="With textarea"></textarea>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary save-button" type="button" id="17">
+                Save
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 23px;"> 1:00 pm </span>
-          </div>
-          <textarea class="form-control input-text-13" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="13">
-              Save
-            </button>
-          </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 21px;">2:00 pm</span>
-          </div>
-          <textarea class="form-control input-text-14" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="14">
-              Save
-            </button>
-          </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 22px;">3:00 pm</span>
-          </div>
-          <textarea class="form-control input-text-15" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="15">
-              Save
-            </button>
-          </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 21px;">4:00 pm</span>
-          </div>
-          <textarea class="form-control input-text-16" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="16">
-              Save
-            </button>
-          </div>
-        </div>
-        <div class="input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text1" style="padding: 21.5px;">5:00 pm</span>
-          </div>
-          <textarea class="form-control input-text-17" aria-label="With textarea"></textarea>
-          <div class="input-group-append">
-            <button class="btn btn-outline-secondary save-button" type="button" id="17">
-              Save
-            </button>
-          </div>
-        </div>
       </div>
-
-      <!-- Timeblocks go here -->
-      <!-- need to create 9 input boxes
-         -->
     </div>
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
       crossorigin="anonymous"></script>
@@ -157,6 +149,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </div>
 </body>
 

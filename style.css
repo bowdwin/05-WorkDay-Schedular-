@@ -1,8 +1,3 @@
-/* body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  } */
 @font-face {
   font-family: "edge-font";
   src: url(./assets/roboclonechrome.ttf);
@@ -127,7 +122,8 @@ textarea {
 }
 .momentum-time {
   color: red;
-  font-size: 60px;
+  /* font-size: 60px; */
+  height: auto;
 }
 
 .align-center {
@@ -136,11 +132,11 @@ textarea {
 .save-button {
   color: red;
   border: red solid 2px;
-  font-size: 20px;
+  font-size: 15px;
 }
 .input-group-text1 {
-  padding: 20px;
+  /* padding: 15px; */
   border: red 2px solid;
-  font-size: 20px;
+  font-size: 15px;
   color:silver;
 }

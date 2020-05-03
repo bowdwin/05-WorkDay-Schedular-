@@ -1,13 +1,17 @@
 var storeData = [];
-initialLocalStoragePlace();
 
+//calls function that places local storage onto page
+initialLocalStoragePlace();
+// grabs current day and places on page from moment
 $("#currentDay").text(moment().format('LL'));
+// user clicks save button this function is called
 $(".save-button").on("click", function (event, state) {
     var inputText = $(".input-text-" + this.id).val();
     var thisIstheId = this.id;
-    checkifSavedInArray(inputText, thisIstheId);
+    //calls function that pushes text to local storage for each save input box
+    pushArraytoLocalStorage(inputText, thisIstheId);
 });
-function checkifSavedInArray(inputText, thisIstheId) {
+function pushArraytoLocalStorage(inputText, thisIstheId) {
     newArray = [];
     newArray.push({ textValue: inputText, id: thisIstheId });
     var storeDataLocalStorage = JSON.stringify(newArray);
