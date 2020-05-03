@@ -12,15 +12,21 @@ $(".save-button").on("click", function (event, state) {
     pushArraytoLocalStorage(inputText, thisIstheId);
 });
 function pushArraytoLocalStorage(inputText, thisIstheId) {
+    //creates new array to store the push to local storage
     newArray = [];
+    //pushes into array
     newArray.push({ textValue: inputText, id: thisIstheId });
+    //creates a string for local storage
     var storeDataLocalStorage = JSON.stringify(newArray);
+    //stores in local storage
     localStorage.setItem(thisIstheId, storeDataLocalStorage);
 }
 function initialLocalStoragePlace() {
+    //variable used to help with forloop, number is used for class in loop as well as data storage element
     var totalCal = 18;
+    //gets current time
     var currentTime = moment().format('H');
-    console.log(currentTime);
+    //for loop that will get local storage and place on HTMl page as well as apply css classes for past future and present
     for (var i = 8; i < totalCal; i++) {
         var dataOfStorage = JSON.parse(localStorage.getItem(i));
         if (dataOfStorage != null) {
